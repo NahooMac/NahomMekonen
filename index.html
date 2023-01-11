@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahom Mekonen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.3.js"></script>
+</head>
+<body>
+    <!-- Home -->
+    <div class="navbar">
+        <div class="navbar_titel"><div class="" style="color: rgb(0, 60, 255);">N</div>ahom</div>
+        <div class="navbar_menu">
+            <ul>
+                <li id="about">About</a></li>
+                <li id="contact">Contact</a> </li>
+                <li id="project">Project</a></li>
+                <span  id="dark"><img id="theme" src="sun.png" width="30" alt="" srcset=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="left_content">
+            <div class="sub_header">Web Developer and Database Adminster</div>
+            <div class="Header"> Hi , I'm <span class="" style="color: rgb(0, 60, 255);"> Nahom <br> </span> Mekonen from Ethiopia
+           <br><br><button><a href="#">See More -></a></button>
+        </div>
+    </div>
+    
+    <div class="right_content">
+        <img src="photo2.png" width="500" alt="">
+        <div class="background_anim1"></div>
+        <div class="background_anim2"></div>
+    </div>
+    <!-- /Home -->
+
+    <!-- About -->
+
+<div class="About">
+    <div class="content">
+        <span style="font-weight: bolder;">  Hello There, My Name is <span class="" style="color: rgb(0, 60, 255);">Nahom Mekonen,</span></span>  <br>
+        I'm Passionate Young and hard worker computer
+        programmer Starting from Childhood and currently
+        studying(Web Development and Database Adminstration)
+        in regular Program class at Misrak Poly Techniqual Collage
+        and based on my current Database Administration Courses
+        and previouse Project I have been involved ( School Management system,
+        Inventory Management system,Hospital Management system and money money More)
+        I have Developed important Skills required for stated position such as
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Jquery</li>
+            <li>JavaScript</li>
+            <li>MySql</li>
+            <li>PHP</li>
+            <li>Bootstrap</li>
+            <li>Ms Access</li>
+            <li>Node.JS</li>
+            <li>React</li>
+            <li>TypeScript</li>
+             <li>gitand github</li>
+        </ol>
+         By using myskills listed Above I can Help Your Project
+         to look smarter and Clener within Good time Management
+    </div>
+    
+</div>
+
+  <!-- /About -->
+
+<!--Contact-->
+<div class="contact">
+    <div class="contact_header">You Can <div class="" style="color: rgb(0, 60, 255);">Contact</div> Me In:</div>
+     <ul>
+        <li><img src="telegram.png" width="50" alt=""> <a href="https://t.me/@NahooMac">@NahooMac</a></li>
+        <li><img src="linkedin.png" width="50" alt=""> @NahooMac</li>
+        <li><img src="smartphone-call.png" width="50" alt=""> +251901959439</li>
+        <li><img src="gmail.png" width="50" alt=""> NahomMac66@gmail.com</li>
+       
+        <li><img src="location.png" width="50" alt=""> Ethiopia Addis Abeba Lemi Kura Yeka Abado Adebabay G7 st </li>
+     </ul>
+
+</div>
+
+<!-- /Contact -->
+
+<!-- project's -->
+<div class="project">
+    <div class="project_titel">Some Project I Have Created</div><br><br>
+    <div class="img1">
+        <img src="project's/hospital.png" width="500" alt=""><br><br><br>
+         <a href="http://localhost/E-Hospital%20System/">Hospital Management System</a><br><br>
+    </div>
+    <div class="img1">
+        <img src="project's/school.png" width="500" alt=""><br><br><br>
+         <a href="http://localhost/www.Abado%20secondary%20school.students.com/">School Management System</a>
+    </div><br><br>
+    <div class="img1">
+        <img src="project's/inventory.png" width="500" alt=""> <br><br><br>
+         <a href="http://localhost/Inverntory%20Sys/">Inventory Management System</a>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(()=>{
+        $(".navbar_titel").click(()=>{
+            window.location="index.html"
+        })
+    $("#about").click(()=>{
+        $(".left_content").hide(2000).fadeOut(3000 ,()=>{
+         $(".About").show(3000)
+        })
+    })
+    $("#dark").click(()=>{
+        $("body").toggleClass("light");
+       $("#dark").html("<img src='dark.png' width='30'/>")
+    
+    })
+    $("#contact").click(()=>{
+        $(".left_content").hide(2000).fadeOut(3000 ,()=>{
+         $(".contact").show(4200)
+        })
+    })
+    $("#project").click(()=>{
+        $(".left_content").hide(2000).fadeOut(3000 ,()=>{
+         $(".project").show(4200)
+        })
+    })
+  
+})
+   
+
+
+</script>
+</body>
+</html>
